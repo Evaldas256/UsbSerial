@@ -22,5 +22,9 @@ repositories {
 }
 
 dependencies {
-    // keep empty unless this module needs extra deps
+    // Required by SerialBuffer.java (okio.Buffer)
+    implementation 'com.squareup.okio:okio:1.17.5'
+
+    // Required by com.felhr.utils + SerialPortBuilder (annimon stream)
+    implementation 'com.annimon:stream:1.2.2'
 }
